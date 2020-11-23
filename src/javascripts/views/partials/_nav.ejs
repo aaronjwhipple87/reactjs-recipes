@@ -1,0 +1,29 @@
+
+
+<nav class="navbar navbar-dark py-3 navbar-expand-sm fixed-top">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarLinks">
+		<ul class="navbar-nav">
+				<% if (signedIn) { %>
+					<li><button class="orange"><a id="_sign_user_out">Log out</a></button></li>
+					<li><button class="primary"><a href="/signup">Sign up</a></button></li>
+				<% } else { %> 
+					<li><button class="orange"><a href="/signin">Login</a></button></li>
+					
+				<% } %>
+
+				<li class="mx-auto "><a href="/"><h1> <%= title %></h1></a></li>
+				
+				<% if (signedIn) { %>
+					<li><a href="/">Home</a></li>
+					<li><button class="add-recipe"><a class="recipe-link" href="/recipes/new">Add a new Recipe</a></button></li>
+				<% } else { %> 
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				<% } %>
+		</ul>
+	</div>
+</nav>

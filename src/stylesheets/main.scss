@@ -1,2 +1,225 @@
 // Your styles go here
+@charset "uft-8";
+@import "~bootstrap/scss/bootstrap";
+$font-path: '~react-widgets/lib/fonts';
+$img-path: '~react-widgets/lib/img';
+
+@import '~react-widgets/lib/scss/react-widgets';
+
+
+
+body{
+	font-size: 16px;
+}
+
+a:hover{
+	color: white;
+	cursor: pointer;
+}
+
+
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2.618rem;
+    font-weight: 400;
+}
+.container{
+	max-width: 95%;
+	margin: 10px auto;
+	display: flex;
+	flex-flow: column nowrap;
+	nav{
+		display: flex;
+		background: lightskyblue;
+		text-align: center;
+		height: auto;
+
+		
+		ul{
+			display: flex;
+			list-style: none;
+			padding: 0px;
+			align-items: center;
+			justify-content: flex-start;
+
+			& > li{
+				margin: 0px;
+				padding: 0px 10px;
+				
+				a{
+					text-decoration: none;
+					color: black;
+				}
+				a:hover{
+					color: white;
+					cursor: pointer;
+				}
+				button:hover{
+					background-color: white;
+					color: red !important;
+					border: 1px solid black 
+				}
+				button a:hover{
+					background-color: white;
+					color: red !important;
+				}
+				button a{
+					color: white;
+				}
+			}
+
+			&:first-child{
+				flex: 1;
+			}
+		}
+	}
+
+
+	main{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+
+		& > .card{
+			width: 45%;
+			
+			padding: 10px;
+			margin: 10px 20px;
+			display: flex;
+			flex-flow: row wrap;
+			text-align: center;
+			img{
+				width: 100%;
+			}
+
+			.recipeInfo{
+				list-style: none;
+				display: flex;
+				padding: 10px 0px;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column wrap;
+				margin: auto;
+				
+			}
+			& > h2{
+				text-align: center;
+			}
+		
+		}
+	}
+
+}
+
+.recipeDetails{
+	width: 80%;
+	
+	padding: 10px;
+	margin: 10px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	img{
+		width: 60%;
+		
+	}
+	ul{
+		list-style-type: none;
+	}
+}
+
+a.title{
+	color: black !important;
+}
+
+button.orange{
+	margin: 10px;
+	padding: 0 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: rgb(255, 102, 0);
+	color: white;
+}
+
+button.add-recipe{
+	margin: 10px;
+	padding: 0 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: yellow;
+}
+
+.recipe-link{
+	color: black !important;
+}
+
+button.login{
+	margin: 10px;
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: rgb(1, 255, 107);
+	color: black;
+}
+
+button.sign-up{
+	margin: 10px;
+	padding: 0 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: lightgray;
+}
+
+button.primary{
+	margin: 10px;
+	padding: 0 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: blue;
+	color: white;
+}
+
+button.danger{
+	margin: 10px;
+	padding: 0 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: red;
+	color: white;
+}
+
+button:hover, button:focus{
+	background-color: white;
+	color: red !important;
+	border: 1px solid black ;
+}
+
+footer{
+	background: lightgray;
+	text-align: center;
+	padding: 20px 0 50px 20px;
+	a{
+		text-decoration: none !important;
+		padding: 1rem;
+		color: blue !important;
+	}
+	a:hover{
+		color: white !important;
+	}
+	
+}
+form{
+	width: 70%;
+
+	
+}
+
 
