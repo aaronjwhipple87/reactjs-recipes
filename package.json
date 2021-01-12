@@ -1,8 +1,8 @@
 {
-  "name": "project-starter",
+  "name": "Aaron's Recipes",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Abdulmalek Al-Gahmi",
+  "author": "Aaron Whipple",
   "license": "MIT",
   "keywords": [],
   "scripts": {
