@@ -1,6 +1,6 @@
 A a crud react app using mongodb
 
-To deploy you will need to download bothe the users.dat and recipes.dat files to add to mongodb.
+To deploy you will need to download both the users.dat and recipes.dat files to add to mongodb.
 
 #1
 Setup and run mongod from local server
